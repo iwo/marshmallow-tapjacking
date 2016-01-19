@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Marshmallow Tapjacking Service</string>
+    <string name="overlay_message">Some message covering the permission message. Three lines required.</string>
 </resources>

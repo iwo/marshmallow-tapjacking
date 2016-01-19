@@ -1,5 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iwobanas.mtapjacking.service">
+
+    <!-- This permission is hidden by Google Play -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
         android:allowBackup="true"
@@ -7,7 +11,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <service
+            android:name=".OverlayService"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>
