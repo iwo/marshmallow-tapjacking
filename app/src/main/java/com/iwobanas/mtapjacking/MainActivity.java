@@ -1,4 +1,4 @@
-package iwobanas.com.marshmallowtapjacking;
+package com.iwobanas.mtapjacking;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
