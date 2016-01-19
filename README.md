@@ -8,3 +8,11 @@ but they got ignored so I decided to share my findings here.
 
 If you're maintaining some open-source ROM and you need more info on how to fix this vulnerability
 feel free to create Issues with questions.
+
+# Screenshots
+
+## Contacts permissions dialog
+![Permissions Dialog](./screenshots/permissions_dialog.png)
+
+## Hijacked dialog
+![Hijacked Dialog](./screenshots/hijacked_dialog.png)
