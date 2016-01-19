@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
 
         if (requestCode == PERMISSIONS_REQUEST_CODE && grantResults.length > 0
                 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            //TODO: list contacts
+            showContacts();
         }
     }
 
@@ -48,6 +48,13 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(action);
         intent.setClassName("com.iwobanas.mtapjacking.service", "com.iwobanas.mtapjacking.service.OverlayService");
         startService(intent);
+    }
+
+    private void showContacts() {
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.contactListContainer, new ContactListFragment())
+                .commit();
     }
 
     private void startOverlayServiceDelayed(final String action) {
